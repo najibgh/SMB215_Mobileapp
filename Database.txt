@@ -1,0 +1,9 @@
+CREATE DATABASE androidhive;
+CREATE TABLE locations(
+pid int(11) primary key auto_increment,
+longitude varchar(100) not null,
+latitude decimal(10,2) not null,
+description text,
+created_at timestamp default now(),
+updated_at timestamp
+);
